@@ -954,6 +954,13 @@ body {
 	overflow: hidden
 }
 
+.slider--item-image {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	border-radius: 10%;
+}
+
 .work--lockup .slider--item-image img {
 	width: 100%
 }
@@ -1110,7 +1117,7 @@ body {
 
 .about--banner {
 	position: relative;
-	height: 475px
+	height: 60%
 }
 
 
@@ -1851,3 +1858,4 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 
+.mySlides {display:none;}

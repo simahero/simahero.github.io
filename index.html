@@ -33,6 +33,25 @@
          });
          })();
       </script>
+       <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
    </head>
    <body>
       <div class="perspective effect-rotate-left">
@@ -148,7 +167,8 @@
          </div>
       </li>
       <li class="l-section section">
-         <div class="about">
+         <div class="work">
+            <h2>Selected work</h2>
             <div class="about--banner">
                <iframe style="width: 1000px; height: 800px; overflow: hidden; padding-left:18%;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/NTC_Senpai/embed/I-kxl5SSS"></iframe>
             </div>
@@ -165,6 +185,7 @@
             <div class="about--banner">
                <div class="slideshow-container">
                   <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+                   <div class = "mySlides">
                   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B4TrN-_AZgR/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                      <div style="padding:16px;">
                         <a href="https://www.instagram.com/p/B4TrN-_AZgR/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -215,7 +236,9 @@
                         <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B4TrN-_AZgR/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Simahero (@zeno_productions.exe) által megosztott bejegyzés</a>, <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-11-01T03:17:32+00:00">Okt 31., 2019, időpont: 8:17 (PDT időzóna szerint)</time></p>
                      </div>
                   </blockquote>
+                   </div>
                   <script async src="//www.instagram.com/embed.js"></script>
+                   <div class = "mySlides">
                   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B3iW4dagj82/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                      <div style="padding:16px;">
                         <a href="https://www.instagram.com/p/B3iW4dagj82/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -266,7 +289,9 @@
                         <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B3iW4dagj82/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Simahero (@zeno_productions.exe) által megosztott bejegyzés</a>, <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2019-10-12T23:37:03+00:00">Okt 12., 2019, időpont: 4:37 (PDT időzóna szerint)</time></p>
                      </div>
                   </blockquote>
+                   </div>
                   <script async src="//www.instagram.com/embed.js"></script>
+                   <div class = "mySlides">
                   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B3iYAL1ga4X/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                      <div style="padding:16px;">
                         <a href="https://www.instagram.com/p/B3iYAL1ga4X/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -318,25 +343,15 @@
                      </div>
                   </blockquote>
                   <script async src="//www.instagram.com/embed.js"></script>
+                   </div>
                   <button class="next" onclick="plusDivs(+1)">&#10095;</button>
                </div>
-               <script>
-                  var slideIndex = 0;
-                  carousel();
-                  
-                  function carousel() {
-                  var i;
-                  var x = document.getElementsByClassName("instagram-media");
-                  for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                  }
-                  slideIndex++;
-                  if (slideIndex > x.length) {slideIndex = 1}
-                  x[slideIndex-1].style.display = "block";
-                  }
-                  
-               </script>
             </div>
          </div>
+          
+          </li>
+          </ul>
+          </div>
+       </div>
    </body>
 </html>
