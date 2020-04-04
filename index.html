@@ -42,7 +42,7 @@
          <div class="intro">
             <div class="intro--banner">
                <h1> Hello World!</h1>
-               <p> I am a self-taught software developer, mainly working on visualization projects in Java SE, Java FX and JavaScript. </p>
+               <p style="text-align: justify"> I am a self-taught software developer, mainly working on visualization projects in Java SE, Java FX and JavaScript. </p>
             </div>
          </div>
       </li>
@@ -129,11 +129,20 @@
          </div>
       </li>
       <li class="l-section section">
-         <div class="work-js">
+         <div class="about">
             <h2>Selected work</h2>
-            <div class="about-works">
-               <iframe style="width: 1000px; height: 800px; overflow: hidden; padding-left:18%;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/NTC_Senpai/embed/I-kxl5SSS"></iframe>
-            </div>
+            <div class="ig">
+                <div class="slideshow-container">
+                    <button class="prev" onclick="plusDivss(-1)">&#10094;</button>
+                    <div class = "mySlides2">
+                    <iframe style="width: 1000px; height: 800px; overflow: hidden; padding-left:18%;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/NTC_Senpai/embed/I-kxl5SSS"></iframe>
+                    </div>
+                    <div class = "mySlides2">
+                    <iframe style="width: 1000px; height: 800px; overflow: hidden; padding-left:18%;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/NTC_Senpai/embed/BioyXD58j"></iframe>
+                    </div>
+                    <button class="next" onclick="plusDivss(+1)">&#10095;</button>
+                </div>
+             </div>
          </div>
       </li>
       <li class="l-section section">
@@ -318,7 +327,7 @@
                </div>
             </div>
          </div>
-                 <script>
+          <script>
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -336,7 +345,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
-</script>
+          </script>
           
           </li>
           </ul>
@@ -363,5 +372,24 @@ function showDivs(n) {
          });
          })();
       </script>
+                 <script>
+var slideIndex = 1;
+showDivss(slideIndex);
+
+function plusDivss(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivss(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+          </script>
     </body>
     </html>
