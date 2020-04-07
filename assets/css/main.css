@@ -1134,8 +1134,10 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 0 auto;
+	margin: auto;
  
+}
+
 }
 
 @media (max-width: 1180px) {
@@ -1143,14 +1145,6 @@ body {
 		max-width: 100%;
         
 	}
-}
-
-.p5jselement{
-    width: 1000px;
-    height: 1000px;
-    overflow: hidden;
-    padding-left: 18%;
-    
 }
 
 .about--banner {
@@ -1952,23 +1946,29 @@ body {
 }
 
 .instagram-media {
-  position: relative;
-  left: 20%;
+
  
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
-  margin: auto;
-    margin-top: auto;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 100%
   margin-top: -22px;
   padding: 16px;
   color: white;
@@ -1981,7 +1981,13 @@ body {
 }
 
 .next {
-  right: 0;
+    position: absolute;
+  right: -16%;
+}
+
+.prev {
+    position: absolute;
+    left: -16%;
 }
 
 .prev:hover, .next:hover {
@@ -1989,15 +1995,8 @@ body {
 }
 
 .mySlides {
- position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    padding: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
+    
 }
+
+
