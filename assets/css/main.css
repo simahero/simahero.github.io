@@ -1372,6 +1372,21 @@ body {
     color: white
 }
 
+.btn {
+margin-top: 40%;
+    margin-left: 25%;
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color:dimgrey;
+}
+
 
 .contact--lockup {
 	position: relative;
