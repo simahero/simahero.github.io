@@ -1371,7 +1371,7 @@ body {
   cursor: pointer;
   font-size: 20px;
     position: relative;
-    margin-top: 20%;
+    margin-top: 100px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1396,11 +1396,12 @@ body {
 
 .resp-iframe {
    position: relative;
-    padding-top: 50%;
+    padding-top: 200px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     display: block;
+    max-height: 100%;
 }
 
 .contact {
