@@ -1371,7 +1371,7 @@ body {
   cursor: pointer;
   font-size: 20px;
     position: relative;
-    margin-top: 40px;
+    margin-top: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
