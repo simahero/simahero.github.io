@@ -1371,7 +1371,7 @@ body {
   cursor: pointer;
   font-size: 20px;
     position: relative;
-    margin-top: 4%;
+    margin-top: 20%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1396,7 +1396,7 @@ body {
 
 .resp-iframe {
    position: relative;
-    padding-top: 10%;
+    padding-top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
