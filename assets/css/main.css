@@ -1373,8 +1373,9 @@ body {
 }
 
 .btn {
+    position: absolute;
 margin-top: 40%;
-    margin-left: 25%;
+left: 45%;
   background-color: #000;
   border: none;
   color: white;
