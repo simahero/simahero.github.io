@@ -1371,7 +1371,7 @@ body {
   cursor: pointer;
   font-size: 20px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 60px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1389,6 +1389,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 80%;
+    height: 80%;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -1401,7 +1402,6 @@ body {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     display: block;
-    max-height: 100%;
 }
 
 .contact {
