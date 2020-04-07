@@ -1388,7 +1388,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
+    width: 95%;
     height: 80%;
     margin: 0 auto;
     padding: 0;
@@ -1988,4 +1988,16 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 
-.mySlides {display:none;}
+.mySlides {
+ position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
