@@ -128,8 +128,25 @@
          </div>
       </li>
       <li class="l-section section">
-         <div class="contact">
-            <div class="about--banner">
+         <div id="contactpg" class="contact">
+             <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+<button id="mi" style="background-color: transparent; width: 350px; border: none; margin-top: 50px;"><div>
+  <img style="vertical-align:middle; margin-left: -140px;" src="assets/img/apps/mi.png">
+  <span style="font-size: 24px">MOSH IT</span>
+    </div></button>
+                 
+<button id="si" style="background-color: transparent; width: 350px; border: none;">
+    <div>
+  <img style="vertical-align:middle; margin-left: -150px;" src="assets/img/apps/si.png">
+  <span style="font-size: 24px">SORT IT</span>
+    </div></button>
+
+</div>
+             <button style="z-index: 5" class="hb"   onclick="openNav()">&#9776; More Projects
+             </button>
+            <div class="about--banner" id="maincontacts">
                 <div class="resp-container">
                 <iframe class="resp-iframe" width="560" height="315" align="middle" src="https://www.youtube.com/embed/OJiBwJwSKqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -383,5 +400,37 @@ function showDivss(n) {
   x[slideIndex-1].style.display = "block";  
 }
           </script>
+       <script>
+       function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+       </script>
+       <script>
+           document.getElementById('si').onclick = changeApp;
+           document.getElementById('mi').onclick = changeApp;
+       function changeApp(){
+           if (this.id == 'si'){
+            changeSideBarCol("#064500");
+            changeBackground('.contact {background-image: url("/home/buzivagyok/Documents/simahero.github.io/assets/img/sibg.jpg")}');
+           } else if (this.id == 'mi'){
+               changeSideBarCol("#470500");
+            changeBackground('.contact {background-image: url("/home/buzivagyok/Documents/simahero.github.io/assets/img/mi.jpg")}');
+           }
+       }
+           
+        function changeSideBarCol(col){
+            document.getElementById("mySidebar").style.backgroundColor = col;
+        }
+           function changeBackground(bg){
+                var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule(bg);
+           }
+       </script>
     </body>
     </html>
