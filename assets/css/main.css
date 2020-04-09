@@ -513,6 +513,7 @@ body {
 	margin: 0 0 0 10px;
 	font-size: 16px;
 	font-weight: 700;
+    color: white;
 	text-transform: uppercase
 }
 
@@ -1389,7 +1390,7 @@ body {
     background-color: transparent;
     z-index: 5;
     right: 25px;
-    top: 1em;
+    top: 1.3em;
     border: none;
     margin: 0 0 0 0;
 	font-size: 16px;
@@ -1400,7 +1401,7 @@ body {
 }
 
 .hb:hover {
-  background-color: #470500;
+  background-color: #54545457;
     opacity: 0,5;
     
 }
