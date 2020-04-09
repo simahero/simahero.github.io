@@ -1376,14 +1376,27 @@ body {
   background-color:dimgrey;
 }
 
+@media screen and (max-width: 767px) {
+    .hb .span {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
 .hb {
     position: absolute;
     display: block;
     background-color: transparent;
     z-index: 5;
     right: 25px;
-    top: 25px;
+    top: 2em;
     border: none;
+    margin: 5px 0 0 0;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase
+    
     
 }
 
