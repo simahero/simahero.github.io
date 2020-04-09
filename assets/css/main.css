@@ -1154,6 +1154,7 @@ body {
 
 }
 
+
 .ig {
 	position: relative;
 }
@@ -1164,8 +1165,8 @@ body {
 
 .about--banner h2 {
 	position: relative;
-	margin-top: 35px;
-	font-size: 68px;
+	margin-top: -150px;
+	font-size:6vw;
 	font-weight: 900;
 	line-height: 1;
 	z-index: 1
@@ -1180,134 +1181,12 @@ body {
 	z-index: 1
 }
 
-.about--banner h2::before {
-	content: "";
-	position: absolute;
-	top: 60px;
-	left: 268px;
-	width: 30px;
-	height: 30px;
-	background-color: #0f33ff;
-	border-radius: 50%
-}
-
-.about--banner h2::after {
-	content: "";
-	position: absolute;
-	top: 255px;
-	left: 255px;
-	width: 10px;
-	height: 10px;
-	background-color: #0c0c0c
-}
-
-.about--banner a {
-	padding: 5px 17px 5px 0;
-	text-decoration: none;
-	color: #fff;
-	font-weight: 700;
-	text-transform: uppercase;
-	background-color: transparent
-}
-
-.about--banner a:hover svg {
-	left: 10px
-}
-
-.about--banner a svg {
-	position: relative;
-	left: 5px;
-	width: 15px;
-	fill: #fff;
-	-webkit-transition: left .2s ease-in-out;
-	transition: left .2s ease-in-out
-}
-
-.about--banner img {
-	position: absolute;
-	bottom: -90px;
-	right: -12px
-}
-
-.about--options {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	max-width: 600px;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0;
-	list-style: none
-}
-
-.about--options>a {
-	position: relative;
-	width: 150px;
-	height: 75px;
-	text-decoration: none;
-	color: #fff;
-	border: 10px solid #0f33ff;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat
-}
-
-.about--options>a:nth-child(1) {
-	background-image: url("../img/about-winners.jpg")
-}
-
-.about--options>a:nth-child(2) {
-	background-image: url("../img/about-philosophy.jpg")
-}
-
-.about--options>a:nth-child(3) {
-	background-image: url("../img/about-history.jpg")
-}
-
-.about--options>a:hover h3 {
-	bottom: -50px
-}
-
-.about--options h3 {
-	position: absolute;
-	bottom: -38px;
-	left: 10px;
-	font-size: 16px;
-	text-transform: uppercase;
-	-webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
-	transition: bottom .2s ease-in-out, left .2s ease-in-out
-}
 
 @media (max-width: 767px) {
 	.about--banner {
 		height: 305px
 	}
-	.about--banner::before {
-		top: 0;
-		left: 125px
-	}
-	.about--banner::after {
-		top: 35px;
-		left: 260px
-	}
 	.about--banner h2 {
-		margin-top: 10px;
-		font-size: 44px
-	}
-	.about--banner h2::before {
-		top: 28px;
-		left: 168px
-	}
-	.about--banner h2::after {
-		top: 163px;
-		left: 163px
-	}
-	.about--banner img {
-		width: 315px
 	}
 }
 
@@ -1315,30 +1194,11 @@ body {
 	.about--banner {
 		height: auto
 	}
-	.about--banner::before {
-		left: 155px
-	}
-	.about--banner::after {
-		left: 310px
-	}
 	.about--banner h2 {
-		margin-top: 0;
-		font-size: 55px
+        width:auto;
+
 	}
-	.about--banner h2::before {
-		top: 43px;
-		left: 214px
-	}
-	.about--banner h2::after {
-		top: 205px;
-		left: 205px
-	}
-	.about--banner img {
-		display: none
-	}
-	.about--options {
-		display: none
-	}
+
 }
 
 
@@ -1407,7 +1267,8 @@ body {
   z-index: 10; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #470500; /* Black*/
+  background-color: rgba(0, 0, 0, 0.7); /* Black*/
+  background-blend-mode:;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -2090,4 +1951,7 @@ body {
     
 }
 
-
+#maincontactsps {
+    visibility: hidden;
+    display: none;
+}

@@ -168,6 +168,9 @@
   background-size: 100% 100%; background-repeat: no-repeat; " class="btn"><a href="https://play.google.com/store/apps/details?id=com.simahero.datamosh">
                 </a></button>
             </div>
+             <div class="about--banner" id="maincontactsps">
+                 <h2 align="center"> UNDER<br>DEVELOPMENT </h2>
+            </div>
          </div>
       </li>
       <li class="l-section section">
@@ -416,11 +419,13 @@ function showDivss(n) {
       <script>
        function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
+           document.getElementById("hbtn").style.visibility = "hidden";
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("hbtn").style.visibility = "visible";
 }
        </script>
       <script>
@@ -428,19 +433,21 @@ function closeNav() {
            document.getElementById('mi').onclick = changeApp;
        function changeApp(){
            if (this.id == 'si'){
+               document.getElementById("hbtn").style.visibility = "visible";
+               document.getElementById("maincontactsps").style.visibility = "visible";
+               document.getElementById("maincontactsps").style.display = "unset";
+               document.getElementById("maincontacts").style.visibility = "hidden";
                document.getElementById("mySidebar").style.width = "0";
-            changeSideBarCol("#064500");
             changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/sibg.jpg")}');
            } else if (this.id == 'mi'){
+               document.getElementById("hbtn").style.visibility = "visible";
+               document.getElementById("maincontactsps").style.visibility = "hidden";
+               document.getElementById("maincontactsps").style.display = "none";
+               document.getElementById("maincontacts").style.visibility = "visible";
                document.getElementById("mySidebar").style.width = "0";
-               changeSideBarCol("#470500");
             changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/mi.jpg")}');
            }
        }
-           
-        function changeSideBarCol(col){
-            document.getElementById("mySidebar").style.backgroundColor = col;
-        }
            function changeBackground(bg){
                 var style = document.createElement('style');
   document.head.appendChild(style);
