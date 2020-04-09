@@ -1358,23 +1358,17 @@ body {
 
 
 .btn {
-    
-  background-color: #000;
+    position: absolute;
+    background-color: transparent;
   border: none;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
-  font-size: 20px;
     position: relative;
     margin-top: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
     display: block;
-}
-
-.btn:hover {
-  background-color:dimgrey;
 }
 
 @media screen and (max-width: 767px) {
