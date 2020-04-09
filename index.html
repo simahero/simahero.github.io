@@ -14,6 +14,23 @@
       <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
       <script src="assets/js/functions-min.js"></script>
       <script async="" defer="defer" src="//platform.instagram.com/en_US/embeds.js"></script>
+       <scrip>
+       <script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/sibg.jpg",
+				"https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/mi.jpg"
+			)
+		//--><!]]>
+	</script>
+       </scrip>
    </head>
    <body>
       <div class="perspective effect-rotate-left">
@@ -26,7 +43,6 @@
             <img src="assets/img/logo.png">
             <p>simahero.github.io</p>
          </a>
-         <button class="header--cta cta">Instagram</button>
       </header>
       <nav class="l-side-nav">
          <ul class="side-nav">
@@ -144,7 +160,7 @@
     </div></button>
 
 </div>
-             <button style="z-index: 5" class="hb"   onclick="openNav()">&#9776; More Projects
+             <button style="z-index: 6" id="hbtn" class="hb"   onclick="openNav()"><p>&#9776;<span id="moreprojexts"> More Projects</span> </p>
              </button>
             <div class="about--banner" id="maincontacts">
                 <div class="resp-container">
@@ -417,9 +433,11 @@ function closeNav() {
            if (this.id == 'si'){
             changeSideBarCol("#064500");
             changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/sibg.jpg")}');
+               changeButton('.hb:hover {background-color: #064500; opacity: 0,5;}');
            } else if (this.id == 'mi'){
                changeSideBarCol("#470500");
             changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/mi.jpg")}');
+               changeButton('.hb:hover {background-color: #470500; opacity: 0,5;}');
            }
        }
            
@@ -428,6 +446,11 @@ function closeNav() {
         }
            function changeBackground(bg){
                 var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule(bg);
+           }
+           function changeButton(col){
+               var style = document.createElement('style');
   document.head.appendChild(style);
   style.sheet.insertRule(bg);
            }
