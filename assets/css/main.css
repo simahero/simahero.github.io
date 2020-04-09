@@ -668,7 +668,7 @@ body {
 }
 
 .side-nav li.is-active {
-	color: #0f33ff;
+	color: #fff;
 	-webkit-transition: color .4s ease-in-out;
 	transition: color .4s ease-in-out
 }
