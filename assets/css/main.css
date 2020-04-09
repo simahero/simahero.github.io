@@ -279,7 +279,7 @@ body {
 }
 
 body {
-	background-color: #858585;
+	background-color: #393939;
 	font-size: 14px;
 	line-height: 1.6;
 	font-family: "Montserrat", sans-serif;
@@ -631,7 +631,7 @@ body {
 	position: relative;
 	top: 3px;
 	left: 10px;
-	color: #000;
+	color: #fff;
 	font-size: 14px;
 	font-weight: 300;
 	opacity: 0;
@@ -642,7 +642,7 @@ body {
 	position: absolute;
 	top: 3px;
 	left: 10px;
-	color: #000;
+	color: #fff;
 	font-size: 14px;
 	font-weight: 300
 }
@@ -682,7 +682,7 @@ body {
 
 .side-nav li.is-active::before {
 	left: -33px;
-	color: #000
+	color: #fff
 }
 
 .intro {
