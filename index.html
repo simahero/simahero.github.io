@@ -24,8 +24,8 @@
 				}
 			}
 			preload(
-				"https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/sibg.jpg",
-				"https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/mi.jpg",
+				"https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/backgrounds/sibg.jpg",
+				"https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/backgrounds/mi.jpg",
                 "https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/apps/google-play-store-button.png",
                 "https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/apps/mi.png",
                 "https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/apps/si.png"
@@ -70,7 +70,7 @@
                   <li class="slider--item slider--item-left">
                      <a href="https://github.com/simahero/LISSAJOUS-CURVE" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/lissa.gif" alt="Lissajous Curve">
+                           <img src="assets/img/projects/lissa.gif" alt="Lissajous Curve">
                         </div>
                         <p class="slider--item-title">Lissajous Curve</p>
                      </a>
@@ -78,7 +78,7 @@
                   <li class="slider--item slider--item-center">
                      <a href="https://github.com/simahero/MaurerRose" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/mauerrose.jpg" alt="MAURER ROSE">
+                           <img src="assets/img/projects/mauerrose.jpg" alt="MAURER ROSE">
                         </div>
                         <p class="slider--item-title">MAURER ROSE</p>
                      </a>
@@ -86,7 +86,7 @@
                   <li class="slider--item slider--item-right">
                      <a href="https://github.com/simahero/SANDPILES" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/sp.jpg" alt="Sandpiles">
+                           <img src="assets/img/projects/sp.jpg" alt="Sandpiles">
                         </div>
                         <p class="slider--item-title">Sandpiles</p>
                      </a>
@@ -94,7 +94,7 @@
                   <li class="slider--item">
                      <a href="https://github.com/simahero/Path-Finding-Visualization" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/pf.jpg" alt="Pathfinder Algorithm">
+                           <img src="assets/img/projects/pf.jpg" alt="Pathfinder Algorithm">
                         </div>
                         <p class="slider--item-title">Pathfinder Algorithm</p>
                      </a>
@@ -102,7 +102,7 @@
                   <li class="slider--item">
                      <a href="https://github.com/simahero/3D-Engine" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/tr.jpg" alt="Terrain Generator">
+                           <img src="assets/img/projects/tr.jpg" alt="Terrain Generator">
                         </div>
                         <p class="slider--item-title">Terrain Generator</p>
                      </a>
@@ -110,7 +110,7 @@
                   <li class="slider--item">
                      <a href="https://github.com/simahero/SortingAlgorithms" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/sorting.jpg" alt="Sorting Algorithms">
+                           <img src="assets/img/projects/sorting.jpg" alt="Sorting Algorithms">
                         </div>
                         <p class="slider--item-title">Sorting Algorithms</p>
                      </a>
@@ -118,7 +118,7 @@
                   <li class="slider--item">
                      <a href="https://github.com/simahero/Polygons" target="_blank">
                         <div class="slider--item-image">
-                           <img src="assets/img/pol5.jpg" alt="Poligons">
+                           <img src="assets/img/projects/pol5.jpg" alt="Poligons">
                         </div>
                         <p class="slider--item-title">Poligons</p>
                      </a>
@@ -164,6 +164,7 @@
              </div>
                 <button style="z-index: 6" id="hbtn" class="hb"   onclick="openNav()"><p>&#9776;<span id="moreprojexts"> More Projects</span> </p></button>
             <div class="about--banner" id="maincontacts">
+                <h1 align="center">MOSH IT</h1>
                 <div class="resp-container">
                 <iframe class="resp-iframe" width="560" height="315" align="middle" src="https://www.youtube.com/embed/OJiBwJwSKqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -171,7 +172,8 @@
   background-size: 100% 100%; background-repeat: no-repeat; " class="btn"><a href="https://play.google.com/store/apps/details?id=com.simahero.datamosh">
                 </a></button>
             </div>
-             <div class="about--banner" id="maincontactsps">
+             <div class="about--bannerps" id="maincontactsps">
+                 <h1 align="center"> SORT IT </h1>
                  <h2 align="center"> UNDER<br>DEVELOPMENT </h2>
             </div>
          </div>
@@ -441,14 +443,14 @@ function closeNav() {
                document.getElementById("maincontactsps").style.display = "unset";
                document.getElementById("maincontacts").style.visibility = "hidden";
                document.getElementById("mySidebar").style.width = "0";
-            changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/sibg.jpg")}');
+            changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/backgrounds/sibg.jpg")}');
            } else if (this.id == 'mi'){
                document.getElementById("hbtn").style.visibility = "visible";
                document.getElementById("maincontactsps").style.visibility = "hidden";
                document.getElementById("maincontactsps").style.display = "none";
                document.getElementById("maincontacts").style.visibility = "visible";
                document.getElementById("mySidebar").style.width = "0";
-            changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/mi.jpg")}');
+            changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/backgrounds/mi.jpg")}');
            }
        }
            function changeBackground(bg){
