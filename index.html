@@ -169,9 +169,8 @@
                 <div class="resp-container">
                 <iframe class="resp-iframe" width="560" height="315" src="https://www.youtube.com/embed/Hk6u1JkmnHM" frameborder="0" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
-                <button style="background: url(assets/img/apps/google-play-store-button.png); width: 250px; height: 80px;;  background-position: 0% 0%;
-  background-size: 100% 100%; background-repeat: no-repeat; " class="btn"><a href="https://www.dropbox.com/s/7gqo135uoyocwuh/app-release.apk?dl=0" target="_blank">
-                </a></button>
+                <button onclick="openpage()" style="background: url(assets/img/apps/google-play-store-button.png); width: 250px; height: 80px;;  background-position: 0% 0%;
+  background-size: 100% 100%; background-repeat: no-repeat; " class="btn"></button>
             </div>
              <div class="about--bannerps" id="maincontactsps">
                  <h1 align="center"> SORT IT </h1>
@@ -451,7 +450,7 @@ function closeNav() {
                document.getElementById("maincontactsps").style.display = "none";
                document.getElementById("maincontacts").style.visibility = "visible";
                document.getElementById("mySidebar").style.width = "0";
-            changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/backgrounds/mi.jpg")}');
+            changeBackground('.contact {background-image: url("https://raw.githubusercontent.com/simahero/simahero.github.io/master/assets/img/backgrounds/mib.jpg")}');
            }
        }
            function changeBackground(bg){
@@ -459,6 +458,11 @@ function closeNav() {
   document.head.appendChild(style);
   style.sheet.insertRule(bg);
            }
+       </script>
+       <script>
+       function openpage(){
+           window.open("https://play.google.com/store/apps/details?id=com.simahero.datamosh");
+       }
        </script>
     </body>
     </html>
