@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="./dist/pixelsort.js"></script>
+    <script src="./index.js"></script>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="width: 100vw; height: 100vh; margin: 0;">
+    <div class="ps_holder">
+        <div class="ps_options">
+            <div class="ps_button_holder">
+                <label for="ps_input" class="custom-file-upload">UPLOAD</label>
+                <input id="ps_input" type="file" accept="img/*" />
+                <button id="download_sorted">DOWNLOAD</button>
+            </div>
+            <select id="modes">
+                <option value="1">RGB</option>
+                <option value="2">HSV</option>
+            </select>
+            <div class="ps_slider_holder">
+            <h2 id="A">R</h2>
+            <div class="wrap">
+                <input type="range" min="0" max="255" value="0" id="color_fromA">
+                <input type="range" min="0" max="255" value="255" id="color_toA">
+            </div>
+            </div>
+            <div class="ps_slider_holder">
+            <h2 id="B">G</h2>
+            <div class="wrap">
+                <input type="range" min="0" max="255" value="0" id="color_fromB">
+                <input type="range" min="0" max="255" value="255" id="color_toB">
+            </div>
+            </div>
+            <div class="ps_slider_holder">
+            <h2 id="C">B</h2>
+            <div class="wrap">
+                <input type="range" min="0" max="255" value="0" id="color_fromC">
+                <input type="range" min="0" max="255" value="255" id="color_toC">
+            </div>
+            </div>
+            <select id="sort_by">
+                <option class="rgb" value="1">RED</option>
+                <option class="rgb" value="2">GREEN</option>
+                <option class="rgb" value="3">BLUE</option>
+                <option class="hue" value="5">HUE</option>
+                <option class="hue" value="6">SATURATION</option>
+                <option class="hue" value="7">VALUE</option>
+            </select>
+            <input id="sort_btn" type="submit" value="SORT IT">
+        </div>
+        <div class="ps_image">
+            <canvas id="ps_canvas" width="0" height="0"></canvas>
+            <img src="#" id="ps_preview" />
+        </div>
+    </div>
+</body>
+
+</html>
