@@ -188,3 +188,8 @@ input[type=range]:focus {
 input[type=range]:focus {
 	color: darkorange;
 }
+
+@media only and screen (max-width:768px){
+	.ps_holder{
+	flex-direction: column;
+}}
